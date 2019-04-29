@@ -1,5 +1,12 @@
-#include <exports.h>
-#include <utils/postgres.h>
+#include <libpq-fe.h>
+#include <pthread.h>
+#include <stdlib.h>
+#include <json-c/json.h>
+
+#include "exports.h"
+#include "utils/helper.h"
+#include "utils/postgres.h"
+
 
 typedef struct Needles *Needles;
 typedef struct Needles {

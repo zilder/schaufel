@@ -1,4 +1,9 @@
-#include <dummy.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "dummy.h"
+#include "utils/helper.h"
+
 
 Producer
 dummy_producer_init(UNUSED config_setting_t *config)
