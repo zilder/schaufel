@@ -1,11 +1,17 @@
-#include <utils/array.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
 
-typedef struct Array
+#include "utils/array.h"
+#include "utils/logger.h"
+
+
+struct Array
 {
     char   **payload;
     size_t   len;
     size_t   used;
-} *Array;
+};
 
 Array
 array_init(size_t len)
